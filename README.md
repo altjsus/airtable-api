@@ -24,6 +24,6 @@ parseJSON = withObject "TestAirtableObject" $ \v -> TestAirtableObject
 
 main :: IO ()
 main = do
-  TestAirtableObjects <- getRecords settings "TestAirtableObjects" :: IO (Table TestAirtableObject)
-  print TestAirtableObjects
+  x <- getRecords settings "TestAirtableObjects" :: IO (Table TestAirtableObject)
+  print x
 ```
