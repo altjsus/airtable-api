@@ -26,7 +26,7 @@ import           Network.Wreq
 import           Control.Lens ((^.), (.~), (&))
 import           Control.Monad (void)
 
-import           Data.Aeson 
+import           Data.Aeson hiding (Options)
 import           Data.Monoid
 import           Data.ByteString.Lazy (ByteString)
 import qualified Data.ByteString.Char8 as BC
